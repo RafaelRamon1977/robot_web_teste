@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-10-10T17:50:48.601699" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste2" source="C:\Users\rafar\OneDrive\Documentos\CursoQAzando\robot_oficial\teste2.robot">
+<test id="s1-t1" name="Cenário 1: Acessando o site da QAZANDO" line="60">
+<kw name="Abrir Site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-10T17:50:49.059541" level="INFO">Opening browser 'chrome' to base url 'https://automationpratice.com.br/'.</msg>
+<arg>${SITE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-10T17:50:49.059203" elapsed="2.150604"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:49.058237" elapsed="2.152055"/>
+</kw>
+<kw name="Esperar Elemento">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TEMPO}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-10-10T17:50:51.213234" elapsed="0.002499"/>
+</kw>
+<arg>10</arg>
+<status status="PASS" start="2026-10-10T17:50:51.212099" elapsed="0.003891"/>
+</kw>
+<kw name="Clicar em Link de Login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-10T17:50:51.218205" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-10T17:50:51.217241" elapsed="0.666651"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:51.216581" elapsed="0.667469"/>
+</kw>
+<kw name="Tirar Print">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-10-10T17:50:51.968840" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-10-10T17:50:51.885367" elapsed="0.083699"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:51.884649" elapsed="0.084607"/>
+</kw>
+<kw name="Esperar Elemento">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TEMPO}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-10-10T17:50:51.970555" elapsed="0.003603"/>
+</kw>
+<arg>10</arg>
+<status status="PASS" start="2026-10-10T17:50:51.969914" elapsed="0.004433"/>
+</kw>
+<kw name="Digitar email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-10T17:50:51.975919" level="INFO">Typing text 'qazando@teste.com' into text field 'id:user'.</msg>
+<arg>id:user</arg>
+<arg>${USUARIO_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-10T17:50:51.975396" elapsed="0.311858"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:51.974812" elapsed="0.312652"/>
+</kw>
+<kw name="Tirar Print">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-10-10T17:50:52.397348" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-10-10T17:50:52.288738" elapsed="0.108874"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:52.288106" elapsed="0.109730"/>
+</kw>
+<kw name="Digitar senha">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-10T17:50:52.399597" level="INFO">Typing text '123456' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${USUARIO_SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-10T17:50:52.399117" elapsed="0.088579"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:52.398470" elapsed="0.089435"/>
+</kw>
+<kw name="Esperar Elemento">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TEMPO}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-10-10T17:50:52.488744" elapsed="0.001590"/>
+</kw>
+<arg>10</arg>
+<status status="PASS" start="2026-10-10T17:50:52.488348" elapsed="0.002160"/>
+</kw>
+<kw name="Clicar em logar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-10T17:50:52.491714" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<arg>id:btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-10T17:50:52.491468" elapsed="0.109095"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:52.491108" elapsed="0.109734"/>
+</kw>
+<kw name="Esperar Elemento">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TEMPO}s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-10-10T17:50:52.601961" elapsed="0.002077"/>
+</kw>
+<arg>10</arg>
+<status status="PASS" start="2026-10-10T17:50:52.601389" elapsed="0.002844"/>
+</kw>
+<kw name="Verificar Texto de Login Realizado">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-10-10T17:50:52.649290" level="INFO">${TEXTO_ATUAL} = Login realizado</msg>
+<var>${TEXTO_ATUAL}</var>
+<arg>id:swal2-title</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-10T17:50:52.605307" elapsed="0.044074"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${TEXTO_ATUAL}</arg>
+<arg>Login realizado</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-10-10T17:50:52.649716" elapsed="0.000825"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:52.604784" elapsed="0.045950"/>
+</kw>
+<kw name="Tirar Print">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-10-10T17:50:52.768809" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-10-10T17:50:52.652494" elapsed="0.116524"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:52.651368" elapsed="0.117843"/>
+</kw>
+<status status="PASS" start="2026-10-10T17:50:49.057373" elapsed="3.712303"/>
+</test>
+<status status="PASS" start="2026-10-10T17:50:48.604185" elapsed="4.166444"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Teste2" id="s1" pass="1" fail="0" skip="0">Teste2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
